@@ -8,7 +8,7 @@
 	mvn clean install
 ```
 =======
-You can then access petclinic here: http://localhost:8080/petclinic/
+Odpal to na tomcat'cie: http://localhost:8080/petclinic/
 
 
 
