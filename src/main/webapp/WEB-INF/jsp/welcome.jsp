@@ -25,12 +25,16 @@
     <spring:url value="/resources/images/atrakcje.jpeg" htmlEscape="true" var="atrakcjeImage"/>
     <img src="${atrakcjeImage}"/></li>
     <li>
-    <select>
-    <option value="sopot"><fmt:message key="sopot"/></option>
-    <option value="gdańsk"><fmt:message key="gdańsk"/></option>
-    <option value="gdynia"><fmt:message key="gdynia"/></option>
-    </select></li>
+    <h2><fmt:message key="transport"/></h2>
+    <spring:url value="/resources/images/transport.png" htmlEscape="true" var="transportImage"/>
+    <img src="${transportImage}"/></li>
+    </li>
     </ul>
+    <select>
+        <option value="sopot"><fmt:message key="sopot"/></option>
+        <option value="gdańsk"><fmt:message key="gdańsk"/></option>
+        <option value="gdynia"><fmt:message key="gdynia"/></option>
+    </select>
     <jsp:include page="fragments/footer.jsp"/>
 </div>
 </body>
