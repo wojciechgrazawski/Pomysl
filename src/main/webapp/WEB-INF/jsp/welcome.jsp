@@ -14,9 +14,6 @@
     <ul>
     <li><h2><fmt:message key="welcome"/></h2>
     <spring:url value="/resources/images/pets.png" htmlEscape="true" var="petsImage"/>
-<<<<<<< HEAD
-    <img src="${petsImage}"/>
-=======
     <img src="${petsImage}"/></li>
     <li><h2><fmt:message key="rozrywka"/></h2>
     <spring:url value="/resources/images/rozrywka.jpg" htmlEscape="true" var="rozrywkaImage"/>
@@ -25,8 +22,6 @@
     <spring:url value="/resources/images/gastronomia.jpg" htmlEscape="true" var="gastronomiaImage"/>
     <img src="${gastronomiaImage}"/></li>
     </ul>
-
->>>>>>> 78cf820c71ca187853ea34bd99cb6bfa3d4ece2d
     <jsp:include page="fragments/footer.jsp"/>
 </div>
 </body>
