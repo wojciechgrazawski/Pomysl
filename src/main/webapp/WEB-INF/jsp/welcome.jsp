@@ -18,6 +18,9 @@
     <li><h2><fmt:message key="rozrywka"/></h2>
     <spring:url value="/resources/images/rozrywka.jpg" htmlEscape="true" var="rozrywkaImage"/>
     <img src="${rozrywkaImage}"/></li>
+    <li><h2><fmt:message key="gastronomia"/></h2>
+    <spring:url value="/resources/images/gastronomia.jpg" htmlEscape="true" var="gastronomiaImage"/>
+    <img src="${gastronomiaImage}"/></li>
     </ul>
 
     <jsp:include page="fragments/footer.jsp"/>
