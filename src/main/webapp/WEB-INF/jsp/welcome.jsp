@@ -21,6 +21,15 @@
     <li><h2><fmt:message key="gastronomia"/></h2>
     <spring:url value="/resources/images/gastronomia.jpg" htmlEscape="true" var="gastronomiaImage"/>
     <img src="${gastronomiaImage}"/></li>
+    <li><h2><fmt:message key="atrakcje"/></h2>
+    <spring:url value="/resources/images/atrakcje.jpeg" htmlEscape="true" var="atrakcjeImage"/>
+    <img src="${atrakcjeImage}"/></li>
+    <li>
+    <select>
+    <option value="sopot"><fmt:message key="sopot"/></option>
+    <option value="gdańsk"><fmt:message key="gdańsk"/></option>
+    <option value="gdynia"><fmt:message key="gdynia"/></option>
+    </select></li>
     </ul>
     <jsp:include page="fragments/footer.jsp"/>
 </div>
