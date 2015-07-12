@@ -8,7 +8,7 @@
 	mvn clean install
 ```
 =======
-Odpal to na tomcat'cie: http://localhost:8080/petclinic/
+Odpal to na tomcat'cie: http://localhost:8080/pomysl/
 
 
 

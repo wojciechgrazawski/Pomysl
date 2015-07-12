@@ -3,6 +3,15 @@ GRANT ALL PRIVILEGES ON petclinic.* TO pc@localhost IDENTIFIED BY 'pc';
 
 USE petclinic;
 
+CREATE TABLE IF NOT EXISTS sopot (
+  id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nazwa  VARCHAR(30),
+  rodzaj VARCHAR(30),
+  adres  VARCHAR(30),
+  telefon VARCHAR(30),
+  INDEX(nazwa)
+)engine=InnoDB;
+
 CREATE TABLE IF NOT EXISTS vets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),

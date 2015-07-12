@@ -37,14 +37,12 @@
                  <br>
             </div>
             <div class="form-actions">
-                <button type="submit">Szukaj</button>
+                <button class="btn btn-default" type="submit">Szukaj</button>
             </div>
         </fieldset>
     </form:form>
 
     <br/>
-    <a href='<spring:url value="/owners/new" htmlEscape="true"/>'>Add Owner</a>
-
     <jsp:include page="../fragments/footer.jsp"/>
 
 </div>

@@ -1,3 +1,9 @@
+INSERT IGNORE INTO sopot VALUES (1, 'Piwko', 'Impreza', 'Plaza', '60593333424');
+INSERT IGNORE INTO sopot VALUES (2, 'Tenis', 'Sport', 'Korty', '6059333342');
+INSERT IGNORE INTO sopot VALUES (3, 'Kino', 'Kultura', 'Monciak', '054353523');
+INSERT IGNORE INTO sopot VALUES (4, 'Opera', 'Kultura', 'Opera Lesna', '52352523');
+INSERT IGNORE INTO sopot VALUES (5, 'Plaza', 'Odpoczynek', 'Plaza', '5353');
+
 INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter');
 INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary');
 INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas');

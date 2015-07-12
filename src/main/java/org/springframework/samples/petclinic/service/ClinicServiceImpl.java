@@ -60,6 +60,7 @@ public class ClinicServiceImpl implements ClinicService {
         return petRepository.findPetTypes();
     }
 
+
     @Override
     @Transactional(readOnly = true)
     public Owner findOwnerById(int id) throws DataAccessException {
@@ -71,6 +72,7 @@ public class ClinicServiceImpl implements ClinicService {
     public Collection<Owner> findOwnerByLastName(String lastName) throws DataAccessException {
         return ownerRepository.findByLastName(lastName);
     }
+
 
     @Override
     @Transactional

@@ -74,11 +74,11 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
      * already loaded.
      */
     @Override
-    public Collection<Owner> findByLastName(String lastName) throws DataAccessException {
+    public Collection<Owner> findByLastName(String nazwa) throws DataAccessException {
         Map<String, Object> params = new HashMap<String, Object>();
-        params.put("lastName", lastName + "%");
+        params.put("nazwa", nazwa + "%");
         List<Owner> owners = this.namedParameterJdbcTemplate.query(
-                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :lastName",
+                "SELECT id, nazwa, rodzaj, adres, telefon FROM sopot WHERE nazwa like :nazwa",
                 params,
                 BeanPropertyRowMapper.newInstance(Owner.class)
         );
