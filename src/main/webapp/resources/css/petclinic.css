@@ -18,10 +18,16 @@ input[type="text"] {
 }
 
 .form-horizontal .control-label {
+<<<<<<< HEAD
     text-align: center;
 }
 
 .submit-button {
     width: 50;
     height: 20;
+=======
+    text-align: left
+>>>>>>> 78cf820c71ca187853ea34bd99cb6bfa3d4ece2d
 }
+
+ul > li { display: inline-block; /* You can also add some margins here to make it look prettier */ zoom:1; *display:inline; /* this fix is needed for IE7- */ }
