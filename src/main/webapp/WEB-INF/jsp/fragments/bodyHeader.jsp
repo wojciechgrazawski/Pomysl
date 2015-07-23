@@ -9,7 +9,7 @@
         <ul class="nav">
             <li style="width: 120px;"><a href="<spring:url value="/" htmlEscape="true" />"><i class="icon-home"></i>
                 Home</a></li>
-            <li style="width: 170px;"><a href="<spring:url value="/owners/find.html" htmlEscape="true" />"><i
+            <li style="width: 170px;"><a href="<spring:url value="/sopot/find.html" htmlEscape="true" />"><i
                     class="icon-search"></i> Szukaj pomyslow</a></li>
             <li style="width: 160px;"><a href="<spring:url value="/vets.html" htmlEscape="true" />"><i
                     class="icon-th-list"></i> Top 10 pomyslow</a></li>

@@ -4,6 +4,12 @@ INSERT IGNORE INTO sopot VALUES (3, 'Kino', 'Kultura', 'Monciak', '054353523');
 INSERT IGNORE INTO sopot VALUES (4, 'Opera', 'Kultura', 'Opera Lesna', '52352523');
 INSERT IGNORE INTO sopot VALUES (5, 'Plaza', 'Odpoczynek', 'Plaza', '5353');
 
+
+INSERT IGNORE INTO eventy VALUES (1, 'Sean Paul', 'Koncert', '1000', '160 zl' , '543534');
+INSERT IGNORE INTO eventy VALUES (2, 'Opener', 'Koncert', '155', '345 zl' , '55434');
+INSERT IGNORE INTO eventy VALUES (3, 'Streetball', 'Sport', '50', '0 zl' , '5435345');
+INSERT IGNORE INTO eventy VALUES (4, 'Targ Sniadaniowy', 'Kulinaria', '143', '0 zl' , '545434');
+
 INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter');
 INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary');
 INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas');

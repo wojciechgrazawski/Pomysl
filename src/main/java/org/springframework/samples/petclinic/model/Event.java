@@ -3,31 +3,45 @@ package org.springframework.samples.petclinic.model;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.core.style.ToStringCreator;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.validation.constraints.Digits;
-import java.util.Set;
 
 /**
- * Created by wojciech on 12.07.15.
+ * Created by wojciech on 23.07.15.
  */
 @Entity
-@Table(name = "sopot")
-public class Sopot extends Pomysl {
-    @Column(name = "adres")
+@Table(name = "eventy")
+public class Event extends Pomysl{
+    @Column(name = "ilosc_miejsc")
     @NotEmpty
-    private String adres;
+    private String ilosc_miejsc;
+
+    @Column(name = "cena_biletu")
+    @NotEmpty
+    private String cena_biletu;
+
 
     @Column(name = "telefon")
     @NotEmpty
     @Digits(fraction = 0, integer = 10)
     private String telefon;
 
-    public String getAdres() {
-        return this.adres;
+    public String getIlosc_miejsc() {
+        return this.ilosc_miejsc;
     }
 
-    public void setAdres(String adres) {
-        this.adres = adres;
+    public void setIlosc_miejsc(String ilosc_miejsc) {
+        this.ilosc_miejsc = ilosc_miejsc;
+    }
+
+    public String getCena_biletu() {
+        return this.cena_biletu;
+    }
+
+    public void setCena_biletu(String cena_biletu) {
+        this.cena_biletu = cena_biletu;
     }
 
     public String getTelefon() {
@@ -45,7 +59,8 @@ public class Sopot extends Pomysl {
                 .append("new", this.isNew())
                 .append("nazwa", this.getNazwa())
                 .append("rodzaj", this.getRodzaj())
-                .append("adres", this.adres)
+                .append("adres", this.ilosc_miejsc)
+                .append("adres", this.cena_biletu)
                 .append("telefon", this.telefon)
                 .toString();
     }

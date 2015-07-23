@@ -1,8 +1,9 @@
 package org.springframework.samples.petclinic.repository.jpa;
 
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.petclinic.model.Owner;
+import org.springframework.samples.petclinic.model.Event;
 import org.springframework.samples.petclinic.model.Sopot;
+import org.springframework.samples.petclinic.repository.EventRepository;
 import org.springframework.samples.petclinic.repository.SopotRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,21 +16,21 @@ import java.util.Collection;
  * Created by wojciech on 12.07.15.
  */
 @Repository
-public class JpaSopotRepositoryImpl implements SopotRepository {
+public class JpaEventRepositoryImpl implements EventRepository {
     @PersistenceContext
     private EntityManager em;
 
     @Override
-    public Collection<Sopot> znajdzPomysly() throws DataAccessException {
-        Query query = this.em.createQuery("SELECT distinct sopot FROM Sopot sopot ORDER BY sopot.adres");
+    public Collection<Event> znajdzEventy() throws DataAccessException {
+        Query query = this.em.createQuery("SELECT distinct event FROM Event event ORDER BY event.rodzaj");
         return query.getResultList();
     }
 
     @Override
-    public Sopot findById(int id) throws DataAccessException {
-        Query query = this.em.createQuery("SELECT sopot FROM Sopot sopot WHERE sopot.id =:id");
+    public Event findById(int id) throws DataAccessException {
+        Query query = this.em.createQuery("SELECT event FROM Event event WHERE event.id =:id");
         query.setParameter("id", id);
-        return (Sopot) query.getSingleResult();
+        return (Event) query.getSingleResult();
     }
 }
 

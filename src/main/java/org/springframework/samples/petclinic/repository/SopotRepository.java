@@ -13,4 +13,6 @@ public interface SopotRepository {
 
     Collection<Sopot> znajdzPomysly() throws DataAccessException;
 
+    Sopot findById(int id) throws DataAccessException;
+
 }

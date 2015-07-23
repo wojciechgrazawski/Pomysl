@@ -21,7 +21,7 @@
         <fieldset>
             <div class="control-group" id="lastName">
                 <label class="control-label">Imie </label>
-                <form:input path="lastName" size="30" maxlength="80"/>
+                <form:input path="adres" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span><br>
             </div>
             <div id="gender">
@@ -33,7 +33,7 @@
             </div><br>
             <div id="city">
                  <label class="control-label">Miasto</label>
-                 <form:input path="city" size="30" maxlength="80"/>
+                 <form:input path="telefon" size="30" maxlength="80"/>
                  <br>
             </div>
             <div class="form-actions">
