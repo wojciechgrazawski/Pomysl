@@ -1,7 +1,6 @@
 package org.springframework.samples.petclinic.repository.jpa;
 
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.model.Sopot;
 import org.springframework.samples.petclinic.repository.SopotRepository;
 import org.springframework.stereotype.Repository;
@@ -30,6 +29,16 @@ public class JpaSopotRepositoryImpl implements SopotRepository {
         Query query = this.em.createQuery("SELECT sopot FROM Sopot sopot WHERE sopot.id =:id");
         query.setParameter("id", id);
         return (Sopot) query.getSingleResult();
+    }
+
+    @Override
+    public void save(Sopot sopot) throws DataAccessException {
+        if (sopot.getId() == null) {
+            this.em.persist(sopot);
+        }
+        else {
+            this.em.merge(sopot);
+        }
     }
 }
 

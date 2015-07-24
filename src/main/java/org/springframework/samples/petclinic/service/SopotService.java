@@ -2,6 +2,7 @@ package org.springframework.samples.petclinic.service;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.samples.petclinic.model.Sopot;
+import org.springframework.samples.petclinic.model.Visit;
 
 import java.util.Collection;
 
@@ -13,4 +14,6 @@ public interface SopotService {
     Collection<Sopot> znajdzWszystkiePomysly() throws DataAccessException;
 
     Sopot findSopotById(int id) throws DataAccessException;
+
+    void savePomysl(Sopot sopot) throws DataAccessException;
 }

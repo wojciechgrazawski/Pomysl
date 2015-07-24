@@ -19,7 +19,6 @@ public class Sopot extends Pomysl {
 
     @Column(name = "telefon")
     @NotEmpty
-    @Digits(fraction = 0, integer = 10)
     private String telefon;
 
     public String getAdres() {
@@ -34,9 +33,10 @@ public class Sopot extends Pomysl {
         return this.telefon;
     }
 
-    public void setTelefon(String telephone) {
+    public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
+
     @Override
     public String toString() {
         return new ToStringCreator(this)

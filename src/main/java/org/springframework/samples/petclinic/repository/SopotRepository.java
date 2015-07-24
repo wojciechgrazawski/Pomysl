@@ -3,6 +3,7 @@ package org.springframework.samples.petclinic.repository;
 import org.springframework.dao.DataAccessException;
 import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.model.Sopot;
+import org.springframework.samples.petclinic.model.Visit;
 
 import java.util.Collection;
 
@@ -15,4 +16,5 @@ public interface SopotRepository {
 
     Sopot findById(int id) throws DataAccessException;
 
+    void save(Sopot sopot) throws DataAccessException;
 }

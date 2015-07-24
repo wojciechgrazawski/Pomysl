@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.petclinic.model.Sopot;
 import org.springframework.samples.petclinic.service.SopotService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
@@ -37,9 +39,8 @@ public class SopotController {
         return "sopot/findSopot";
     }
 
-
     @RequestMapping(value = "/sopot", method = RequestMethod.GET)
-    public String processFindForm(Sopot sopot, BindingResult result, Map<String, Object> model) {
+    public String processFindForm(@ModelAttribute("sopot")Sopot sopot, BindingResult result, Map<String, Object> model) {
 
         // allow parameterless GET request for /owners to return all records
         if (sopot.getNazwa() == null) {
@@ -71,5 +72,15 @@ public class SopotController {
         mav.addObject(this.sopotService.findSopotById(sopotId));
         return mav;
     }
+
+    @RequestMapping(value="/sopot/addPomysl",method = RequestMethod.GET)
+    public String addPomysl(@ModelAttribute("sopot")Sopot sopot, BindingResult result,  Map<String, Object> model) {
+        this.sopotService.savePomysl(sopot);
+        Collection<Sopot> results = this.sopotService.znajdzWszystkiePomysly();
+        model.put("selections", results);
+        return "sopot/sopotList";
+    }
+
+
 
 }

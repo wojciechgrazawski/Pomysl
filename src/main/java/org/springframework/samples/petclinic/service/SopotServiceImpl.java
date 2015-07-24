@@ -33,5 +33,11 @@ public class SopotServiceImpl implements SopotService {
         return sopotRepository.findById(id);
     }
 
+    @Override
+    @Transactional
+    public void savePomysl(Sopot sopot) throws DataAccessException {
+        sopotRepository.save(sopot);
+    }
+
 
 }

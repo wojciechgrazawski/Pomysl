@@ -1,8 +1,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<spring:url value="/resources/images/banner-graphic.png" var="banner"/>
-<img src="${banner}"/>
+<spring:url value="/resources/images/baner.jpg" var="banner"/>
+<img class="banner" src="${banner}"/>
 
 <div class="navbar" style="width: 100%;">
     <div class="navbar-inner">
