@@ -20,7 +20,7 @@
                id="search-owner-form">
         <fieldset>
             <div class="control-group" id="lastName">
-                <label class="control-label">Imie </label>
+                <label class="control-label">Czas </label>
                 <form:input path="adres" size="30" maxlength="80"/>
                 <span class="help-inline"><form:errors path="*"/></span><br>
             </div>

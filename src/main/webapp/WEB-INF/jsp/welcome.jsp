@@ -12,28 +12,30 @@
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
     <ul>
-    <li><h2><fmt:message key="eventy"/></h2>
+    <li>
 
     <a href="<spring:url value="/sopot/eventy.html"  />" >
-    <spring:url value="/resources/images/event.png" htmlEscape="true" var="eventImage"/>
-    <img src="${eventImage}"/>
-    </a>
-    </li>
+             <h2><fmt:message key="eventy"/></h2>
+             </a>
+             <a href="<spring:url value="/sopot/eventy.html"  />" >
+             <spring:url value="/resources/images/event.png" htmlEscape="true" var="eventImage"/>
+             <img src="${eventImage}"/>
+             </a>
+             </li>
 
-    <li><h2><fmt:message key="rozrywka"/></h2>
-    <spring:url value="/resources/images/rozrywka.jpg" htmlEscape="true" var="rozrywkaImage"/>
-    <img src="${rozrywkaImage}"/></li>
-    <li><h2><fmt:message key="gastronomia"/></h2>
-    <spring:url value="/resources/images/gastronomia.jpg" htmlEscape="true" var="gastronomiaImage"/>
-    <img src="${gastronomiaImage}"/></li>
-    <li><h2><fmt:message key="atrakcje"/></h2>
-    <spring:url value="/resources/images/atrakcje.jpeg" htmlEscape="true" var="atrakcjeImage"/>
-    <img src="${atrakcjeImage}"/></li>
-    <li>
-    <h2><fmt:message key="transport"/></h2>
-    <spring:url value="/resources/images/transport.png" htmlEscape="true" var="transportImage"/>
-    <img src="${transportImage}"/></li>
-    </li>
+             <li><h2><fmt:message key="rozrywka"/></h2>
+             <spring:url value="/resources/images/rozrywka.jpg" htmlEscape="true" var="rozrywkaImage"/>
+             <img src="${rozrywkaImage}"/></li>
+             <li><h2><fmt:message key="gastronomia"/></h2>
+             <spring:url value="/resources/images/gastronomia.jpg" htmlEscape="true" var="gastronomiaImage"/>
+             <img src="${gastronomiaImage}"/></li>
+             <li><h2><fmt:message key="atrakcje"/></h2>
+             <spring:url value="/resources/images/atrakcje.jpeg" htmlEscape="true" var="atrakcjeImage"/>
+             <img src="${atrakcjeImage}"/></li>
+             <li>
+             <h2><fmt:message key="kultura"/></h2>
+             <spring:url value="/resources/images/transport.png" htmlEscape="true" var="transportImage"/>
+                 <img src="${transportImage}"/></li>
     </ul>
     <select>
         <option value="sopot"><fmt:message key="sopot"/></option>

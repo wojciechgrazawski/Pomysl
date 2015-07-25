@@ -15,6 +15,7 @@
     1. git add --add
     2. git commit -m "kometarz" ewentualnie na tym samym commicie git commit --amend
     3. git push origin master
+    http://kobietydokodu.pl
 ```
 
 
