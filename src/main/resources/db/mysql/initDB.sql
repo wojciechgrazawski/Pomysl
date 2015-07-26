@@ -22,6 +22,17 @@ CREATE TABLE IF NOT EXISTS eventy (
   INDEX(nazwa)
 )engine=InnoDB;
 
+CREATE TABLE IF NOT EXISTS rozrywka (
+  id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nazwa  VARCHAR(30),
+  rodzaj VARCHAR(30),
+  ilosc_miejsc VARCHAR(30),
+  cena_biletu INT(5) UNSIGNED,
+  godzina VARCHAR(30),
+  telefon VARCHAR(30),
+  INDEX(nazwa)
+)engine=InnoDB;
+
 
 CREATE TABLE IF NOT EXISTS vets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,

@@ -10,6 +10,11 @@ INSERT IGNORE INTO eventy VALUES (2, 'Opener', 'Koncert', '155', '345 zl' , '554
 INSERT IGNORE INTO eventy VALUES (3, 'Streetball', 'Sport', '50', '0 zl' , '5435345');
 INSERT IGNORE INTO eventy VALUES (4, 'Targ Sniadaniowy', 'Kulinaria', '143', '0 zl' , '545434');
 
+INSERT IGNORE INTO rozrywka VALUES (1, 'Sean Paul', 'Koncert', '1000', '160 zl' ,'18:00', '543534');
+INSERT IGNORE INTO rozrywka VALUES (2, 'Opener', 'Koncert', '155', '345 zl' ,'19:00', '55434');
+INSERT IGNORE INTO rozrywka VALUES (3, 'Streetball', 'Sport', '50', '0 zl' ,'20:00', '5435345');
+INSERT IGNORE INTO rozrywka VALUES (4, 'Targ Sniadaniowy', 'Kulinaria', '143', '0 zl' ,'21:00', '545434');
+
 INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter');
 INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary');
 INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas');
